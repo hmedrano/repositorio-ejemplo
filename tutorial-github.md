@@ -19,11 +19,32 @@ funcionalidad para la coolaboración.
 
 6. Clonar repositorio remoto en PC's de desarrolladores.
 
+```bash    
+    # Clonar el repositorio remoto en una carpeta local.
+    git clone git@github.com:hmedrano/repositorio-ejemplo.git
+```
+
 7. Crear una rama de desarrollo en repositorio local.
 
-8. Agregar cambios y someter una nueva version.
+```bash
+    # Ejemplo comandos a utilizar, 
+    # Crear una nueva rama, y cambiarse a esa rama.
+    git checkout -b nombre-nueva-rama
+```
+
+8. Agregar cambios y someter una nueva version.  **Importante: Hacer los cambios en su rama de desarrollo, no en main!**
+
+```bash
+    # Hacer cambios, en esta nueva rama
+    git commit -a -m 'descripcion cambios'
+```
 
 9. Subir rama y cambios a repositorio remoto.
+
+```bash
+    # Subir cambios a repositorio remoto
+    git push
+```
 
 10. Hacer una solicitud de "Pull Request" desde la interface de github.
 
