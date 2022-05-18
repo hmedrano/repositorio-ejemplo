@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Representación html de código markdown</title>
+</head>
+<body>
+  <h1>Herramienta para conversión de código markdown a html</h1>
+  <hr>
+  <div id="content"></div>
+  <div id="recursos"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+
+    fetch('tutorial-github.md')
+        .then(response => response.text())
+        .then(mktext => {
+            document.getElementById('content').innerHTML = marked.parse(mktext) ;
+        })
+
+    fetch('recursos.md')
+        .then(response => response.text())
+        .then(mktext => {
+            document.getElementById('recursos').innerHTML = marked.parse(mktext) ;
+        })
+
+  </script>
+</body>
+</html>
