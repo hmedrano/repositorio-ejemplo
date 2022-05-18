@@ -24,3 +24,12 @@ funcionalidad para la coolaboración.
 8. Agregar cambios y someter una nueva version.
 
 9. Subir rama y cambios a repositorio remoto.
+
+10. Hacer una solicitud de "Pull Request" desde la interface de github.
+
+11. Aceptar el "Pull Request", haciendo "Merge Pull Request" desde la interface de github.
+
+12. Crear un issue y corregir.
+
+13. Crear un fork de un repositorio github.
+
